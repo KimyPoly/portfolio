@@ -32,27 +32,27 @@ document.addEventListener("DOMContentLoaded", () => {
   const carouselItemsBis = document.querySelectorAll(".carousel-item-bis");
   const prevButtonBis = document.querySelector(".carousel-control-bis.prev");
   const nextButtonBis = document.querySelector(".carousel-control-bis.next");
-  
 
-  let currentIndex = 0;
 
-  const showSlide = index => {
-      const offset = -index * 100 + "%";
-      carouselBis.style.transform = `translateX(${offset})`;
+  let currentIndexBis = 0;
+
+  const showSlideBis = index => {
+      const offsetBis = -index * 100 + "%";
+      carouselBis.style.transform = `translateX(${offsetBis})`;
   };
 
-  const nextSlide = () => {
-      currentIndex = (currentIndex + 1) % carouselItemsBis.length;
-      showSlide(currentIndex);
+  const nextSlideBis = () => {
+      currentIndexBis = (currentIndexBis + 1) % carouselItemsBis.length;
+      showSlideBis(currentIndexBis);
   };
 
-  const prevSlide = () => {
-      currentIndex = (currentIndex - 1 + carouselItemsBis.length) % carouselItemsBis.length;
-      showSlide(currentIndex);
+  const prevSlideBis = () => {
+      currentIndexBis = (currentIndexBis - 1 + carouselItemsBis.length) % carouselItemsBis.length;
+      showSlideBis(currentIndexBis);
   };
 
-  nextButtonBis.addEventListener("click", nextSlide);
-  prevButtonBis.addEventListener("click", prevSlide);
+  nextButtonBis.addEventListener("click", nextSlideBis);
+  prevButtonBis.addEventListener("click", prevSlideBis);
 
-  setInterval(nextSlide, 3000);
+  setInterval(nextSlideBis, 3500);
 });

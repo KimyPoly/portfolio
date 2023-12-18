@@ -56,3 +56,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
   setInterval(nextSlideBis, 3500);
 });
+
+

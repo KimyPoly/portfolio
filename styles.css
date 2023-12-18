@@ -5,7 +5,10 @@ body {
   font-family: 'Oswald', sans-serif;
   background-color: #FCF5ED;
   position: relative;
+  display: flex;
+
 }
+
 h2 {
   font-size: 4em;
 }
@@ -13,16 +16,24 @@ h2 {
 
 .navbar-nav {
   list-style-type: none;
-  padding: 20px;
+  padding: 16px;
   border: 1px solid;
   display: grid;
   grid-gap: 16px;
   grid-template-columns: 3fr 6fr 1fr;
+  position: fixed;
+  top: 0;
+  background-color: #ba2f28;
+  margin: 0;
+  width: 100%;
+  height: 2em;
+  opacity: 0.9;
+  z-index: 100;
 }
 .nav-link {
   text-decoration: none;
   font-size: 25px;
-  color: #ba2f28;
+  color: #FCF5ED;
   margin-right: 1rem;
   transition: font-size 0.3s;
 }
@@ -52,6 +63,7 @@ a.nav-link:hover {
   background-size: cover;
   background-position: center;
   padding: 150px 0;
+  margin-top: 5em;
 }
 h1 {
   font-size: 65px;
@@ -75,9 +87,11 @@ h1 {
   border-top: 2px solid black;
 }
 
-.me{
+.me {
   display: flex;
-  margin: 2em;
+  margin: 1em;
+  text-align: center;
+  height: 70em;
 }
 .list img {
   width: 60px;
@@ -90,20 +104,21 @@ h1 {
 
 
 
-.me {
-  margin: 1em;
-  text-align: center;
-}
+
 .me-infos {
-  margin: 3em;
-  height: 21em;
-  width: 15em;
+  margin: 3em 3em 0em 3em;
+  height: 19em;
+  width: 19em;
   background-color: #ba2f28;
   color: #FCF5ED;
   text-align: center;
 }
 .me-infos h2{
   font-size: 2em;
+}
+#me-section {
+  /* text-align: center; */
+  margin-top: 20px;
 }
 .cake-img img {
   height: 20em;
@@ -121,19 +136,20 @@ h1 {
   font-family: 'Caveat', cursive;
 }
 .perso {
-  margin: 3em;
+  margin: 0em 3em 3em 3em;
   border: 1px solid #FCF5ED;
   height: 35em;
   width: 19em;
 }
 .code {
-  margin: 3em;
-  border: 1px solid white;
-  height: 34em;
-  width: 19em;
+  margin: 5em;
+  margin-top: 14em;
+  height: 40em;
+  width: 23em;
   background-color: #FCF5ED;
   color: #ba2f28;
   border: 1px solid #FCF5ED;
+  font-size: 20px;
 }
 #code-text {
   border-bottom: 3px solid black;
@@ -147,14 +163,15 @@ h1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 18px;
+  border: 1px solid;
 }
 .list i {
   font-size: 30px;
 }
 .hobies {
   margin: 3em;
-  border: 1px solid black;
-  height: 27em;
+
+  height: 45em;
   width: 13em;
 }
 .hobies h2 {
@@ -174,7 +191,7 @@ h1 {
 
 .project{
   background-color: #ba2f28;
-  border-top: 4px solid black;
+  border-top: 1px solid black;
   height: 50em;
   justify-content: space-around;
 }
@@ -186,7 +203,7 @@ h1 {
 }
 .daily {
   display: flex;
-  border: 2px solid black;
+  border: 1px solid black;
   width: 50%;
   background-color: #FCF5ED;
   justify-content: center;
@@ -205,11 +222,11 @@ h1 {
   margin-top: 7em;
 }
 .pets {
-  border: 2px solid black;
+  border: 1px solid black;
   width: 50%;
   background-color: #FCF5ED;
   justify-content: center;
-  height: 60%;
+
   margin: 2em;
 }
 .pets h2 {
@@ -225,6 +242,7 @@ h1 {
 .carousel-item img {
   width: 15em;
   height: 30em;
+  z-index: 1;
 }
 .carousel-item {
   flex: 0 0 100%;
@@ -256,7 +274,12 @@ h1 {
 .carousel-control.next {
   right: 10px;
 }
-
+.fa-regular {
+  opacity: 0.5;
+}
+.fa-regular:hover {
+  opacity: 1;
+}
 
 .carousel-bis {
   display: flex;
@@ -312,6 +335,16 @@ h1 {
   padding: 0px;
   color: rgba(0,0,0,0.3);
 }
+.mail {
+  text-decoration: none;
+  color: black;
+  font-size: 23px;
+  transition: font-size 0.3s;
+}
+.mail:hover {
+  color: #ba2f28;
+  font-size: 30px;
+}
 .footer-links {
   display: flex;
   align-items: center;
@@ -326,6 +359,11 @@ h1 {
 .footer-links a:hover {
   opacity: 1;
 }
-.footer .fa-heart {
-  color: #ba2f28;
+.footer-copyright {
+  display: block;
+}
+.avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
 }

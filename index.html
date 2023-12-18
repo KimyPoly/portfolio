@@ -15,23 +15,24 @@
 <body>
 
   <div class="content">
-      <ul class="navbar-nav">
-        <div class="nav-me">
-          <li class="nav-items active">
-            <a class="nav-link" href="#me-section">Me</a>
-          </li>
-        </div>
-        <div class="nav-project">
-          <li class="nav-items">
-            <a class="nav-link" href="#project-section">Project</a>
-          </li>
-        </div>
-        <div class="nav-contact">
-          <li class="nav-items">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-        </div>
-      </ul>
+    <ul class="navbar-nav">
+      <div class="nav-me">
+        <li class="nav-items active">
+          <a class="nav-link" href="#me-section">Me</a>
+        </li>
+      </div>
+      <div class="nav-project">
+        <li class="nav-items">
+          <a class="nav-link" href="#project-section">Project</a>
+        </li>
+      </div>
+      <div class="nav-contact">
+        <li class="nav-items">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </div>
+    </ul>
+
 
 
 
@@ -45,26 +46,32 @@
   </div>
 
 
-  <h2>Who am I ?</h2>
-  <div class="me" id="me-section">
-    <div class="me-infos">
-      <h2>Hey ! Welcome to my universe</h2>
-    <h3>My name is Kimberley</h3>
-    <p>I was born in Paris 27 years ago. I come from a small island lost in the Caribbean: Guadeloupe.
-       I've lived near Paris for most of my life. Early 2022, big change: I decided to move to Switzerland.
-    </p>
-    </div>
+
+  <div class="me">
+
+    <div class="first">
+    <h2 id="me-section" style = "margin-left: 0; text-align: left;">Who am I ? </h2>
 
 
-      <div class="perso">
-        <p>I have a rather unusual educational background. I passed a scientific baccalaureate, studied English, IT, web development...
-          I've been interested in a lot of things. One day, I stopped everything to make my childhood dream come true: pastry-making.
-        </p>
-        <div class="cake-img">
-          <img src="image/2E4ED2BD-DE1F-4708-AD83-345A69762BC3.JPG" alt="">
-          <p>Yes, I made this</p>
-        </div>
+      <div class="me-infos">
+        <h2>Hey ! Welcome to my universe</h2>
+      <h3>My name is Kimberley</h3>
+      <p>I was born in Paris 27 years ago. I come from a small island lost in the Caribbean: Guadeloupe.
+         Early 2022, big change: I decided to move to Switzerland. 🇫🇷🇨🇭
+      </p>
       </div>
+
+
+        <div class="perso">
+          <p>I have a rather unusual educational background. I passed a scientific baccalaureate, studied English, IT, web development...
+             One day, I stopped everything to make my childhood dream come true: pastry-making.
+          </p>
+          <div class="cake-img">
+            <img src="image/2E4ED2BD-DE1F-4708-AD83-345A69762BC3.JPG" alt="">
+            <p>Yes, I made this</p>
+          </div>
+        </div>
+    </div>
 
       <div class="code">
         <p id="code-text"> However, my attraction for coding never left me. Several years later, I decided to get back into it in my spare time.
@@ -153,16 +160,18 @@
 
   </div>
 
-  <div class="project" id="project-section">
-    <h2 style="font-size: 5em; text-decoration: underline;">PROJECT</h2>
+  <div class="project" >
+    <h2 id="project-section" style="font-size: 5em;">PROJECT</h2>
     <div class="project-container">
     <div class="daily">
       <div class="daily-text">
         <h2>DailyNutri</h2>
         <p>Mobile application for generating meal plans.
            Answer the questionnaire, choose your dishes (filtered according to your answers)
-           and get a customized food plan with all the necessary details.
-        </p>
+           and get a customized food plan with all the necessary details and a shooping list.
+           Take your phone and
+           <a href="www.dailynutri.xyz" target="_blank">Try it !</a>
+          </p>
       </div>
       <div class="carousel-container">
         <div class="carousel">
@@ -182,8 +191,8 @@
                 <img src="image/IMG_1CA9B6DA9EEA-1.jpeg" alt="Image 5">
             </div>
         </div>
-        <button class="carousel-control prev"><i class="fa-solid fa-arrow-left"></i></i></button>
-        <button class="carousel-control next"><i class="fa-solid fa-arrow-right"></i></button>
+        <button class="carousel-control prev"><i class="fa-regular fa-circle-left"></i></button>
+        <button class="carousel-control next"><i class="fa-regular fa-circle-right"></i></button>
       </div>
     </div>
 
@@ -191,7 +200,7 @@
     <div class="pets">
       <div class="daily-text">
         <h2>Pets&Cie</h2>
-        <p>Bored? You like animals? Pets&Cie puts you in touch with people who need a someone to keep their pet</p>
+        <p>Bored? You like animals? Pets&Cie puts you in touch with people who need someone to keep their pet. <em>Mid-training project</em></p>
       </div>
       <div class="carousel-container-bis">
         <div class="carousel-bis">
@@ -209,34 +218,29 @@
             </div>
 
         </div>
-        <button class="carousel-control-bis prev"><i class="fa-solid fa-arrow-left"></i></button>
-        <button class="carousel-control-bis next"><i class="fa-solid fa-arrow-right"></i></button>
+        <button class="carousel-control-bis prev"><i class="fa-regular fa-circle-left"></i></button>
+        <button class="carousel-control-bis next"><i class="fa-regular fa-circle-right"></i></button>
       </div>
     </div>
   </div>
+  <em>More to come, stay tuned !</em>
   </div>
-
-
-
-
-
-
-
-
 
 
   <div class="footer" id="contact">
     <div class="footer-links">
-      <a href="#"><i class="fab fa-github"></i></a>
-      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/KimyPoly" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/kimberley-polypheme" target="_blank"><i class="fab fa-linkedin"></i></a>
     </div>
-    <p>Kim.polypheme@gmail.com</p>
+    <a class="mail" href="mailto:kim.polypheme@gmail.com">Contact me</a>
     <div class="footer-copyright">
-      Made with <i class="fas fa-heart"></i>
+      <em>With Love. Kim</em>
+      <img class="avatar" alt="avatar" src="image/7B573D38-3F49-4854-AD3D-4CB0B253632D_1_105_c.jpeg" />
     </div>
   </div>
 
   <script src="script.js"></script>
+
 </div>
 </body>
 </html>

@@ -61,11 +61,12 @@ a.nav-link:hover {
 
 
 .banner {
-  height: 17em;
+  max-height: 22em ;
+  height: 22em;
   background-size: cover;
   background-position: center;
   padding: 150px 0;
-  margin-top: 5em;
+  margin-top: 4em;
 }
 h1 {
   font-size: 65px;
@@ -91,9 +92,8 @@ h1 {
 
 .me {
   display: flex;
-  margin: 1em;
   text-align: center;
-  height: 65em;
+  height: 57em;
 }
 .list img {
   width: 60px;
@@ -118,10 +118,7 @@ h1 {
 .me-infos h2{
   font-size: 2em;
 }
-#me-section {
-  /* text-align: center; */
-  margin-top: 20px;
-}
+
 .cake-img img {
   height: 20em;
   margin-left: 0.5em;
@@ -144,9 +141,8 @@ h1 {
   width: 19em;
 }
 .code {
-  margin: 5em;
-  margin-top: 7em;
-  height: 40em;
+  margin: 7em 5em 0 5em;
+  height: 35em;
   width: 23em;
   background-color: #FCF5ED;
   color: #ba2f28;
@@ -403,7 +399,3 @@ h1 {
   border-radius: 50%;
 
 }
-
-
-
-

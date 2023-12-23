@@ -25,7 +25,7 @@ h2 {
   grid-template-columns: 3fr 6fr 1fr;
   position: fixed;
   top: 0;
-  background-color: #ba2f28;
+  background-color: #161A30;
   margin: 0;
   width: 100%;
   height: 2em;
@@ -34,14 +34,14 @@ h2 {
 }
 .nav-link {
   text-decoration: none;
-  font-size: 25px;
+  font-size: 1.5em;
   color: #FCF5ED;
   margin-right: 1rem;
   transition: font-size 0.3s;
 }
 a.nav-link:hover {
-  color: black;
-  font-size:30px;
+  color: #ba2f28;
+  font-size:2em;
 }
 .nav-me {
   margin-right:2em;
@@ -54,6 +54,10 @@ a.nav-link:hover {
 
 .nav-contact {
   margin-right:2em;
+}
+.nav-link.active {
+  color: #ba2f28;
+  font-size:2em;
 }
 
 
@@ -69,25 +73,25 @@ a.nav-link:hover {
   margin-top: 4em;
 }
 h1 {
-  font-size: 65px;
+  font-size: 5em;
   text-align: center;
   font-weight: bold;
-  color: #FCF5ED;
+  color: #ba2f28;
   margin-bottom: 0;
   margin-top: 0;
+  text-shadow: 2px 2px 4px #FCF5ED;
+
 }
 .banner-info h3 {
   font-size: 30px;
-  color: #ba2f28;
+  color: #161A30;
   text-align: center;
   text-shadow: 2px 2px 4px #FCF5ED;
   font-weight: bold;
-  border: 1px solid #FCF5ED;
-  background-color: #FCF5ED;
+  border-top: 3px solid #FCF5ED;
+  border-bottom: 3px solid #FCF5ED;
   margin-top: 0;
   padding: 1em;
-  border-bottom: 2px solid black;
-  border-top: 2px solid black;
 }
 
 .me {
@@ -111,7 +115,7 @@ h1 {
   margin: 3em 3em 0em 3em;
   height: 19em;
   width: 19em;
-  background-color: #ba2f28;
+  background-color: #161A30;
   color: #FCF5ED;
   text-align: center;
 }
@@ -121,9 +125,7 @@ h1 {
 
 .cake-img img {
   height: 20em;
-  margin-left: 0.5em;
-  margin-right: 0.5em;
-  margin-top: 0.5em;
+  margin: 0.5 0.5em 0 0.5em;
 }
 .cake-img {
   height: 24em;
@@ -137,7 +139,7 @@ h1 {
 .perso {
   margin: 0em 3em 3em 3em;
   border: 1px solid #FCF5ED;
-  height: 35em;
+  height: 34em;
   width: 19em;
 }
 .code {
@@ -152,6 +154,7 @@ h1 {
 #code-text {
   border-bottom: 3px solid black;
   border-top: 3px solid black;
+  color: #161A30;
   padding-bottom: 1em;
   padding-top: 1em;
 }
@@ -161,7 +164,7 @@ h1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 18px;
-  border: 1px solid;
+
 }
 .list i {
   font-size: 30px;
@@ -186,21 +189,27 @@ h1 {
   width: 4em;
 }
 .hobies .fa-solid {
-  color: #ba2f28;
+  color: #161A30;
 }
 .arrow {
-  margin: 8em 2em 0em 5em;
-  color: black;
+  margin: 12em 2em 0em 5em;
+  color: #161A30;
+}
+
+
+.arrow .fa-solid:hover {
+  color: #ba2f28;
+  font-size: 70px;
 }
 
 
 .project{
-  background-color: #ba2f28;
+  background-color: #161A30;
   height: 50em;
   justify-content: space-around;
 }
 .project h2 {
-  margin-top: 7px;
+  color:#FCF5ED;
 }
 .project-container {
   display: flex;
@@ -210,12 +219,12 @@ h1 {
   width: 50%;
   background-color: #FCF5ED;
   justify-content: center;
-  height: 60%;
+  height: 32em;
   margin: 2em;
   transition: box-shadow 0.3s;
 }
 .daily:hover {
-  box-shadow: 6px 3px 3px black;
+  box-shadow: 6px 3px 3px #ba2f28;
 }
 .daily-text {
   width: 50%;
@@ -223,14 +232,17 @@ h1 {
 }
 .daily h2 {
   font-size: 3em;
+  color: #161A30;
   border-bottom: 1px solid black;
 }
 .daily p {
   margin: 4em 0 3em 0;
+  color: #161A30;
 }
 .pets {
   display: flex;
   width: 50%;
+  height: 32em;
   background-color: #FCF5ED;
   justify-content: center;
   margin: 2em;
@@ -238,10 +250,14 @@ h1 {
 }
 .pets h2 {
   font-size: 3em;
+  color: #161A30;
   border-bottom: 1px solid black;
 }
+.pets-content {
+  margin-left: 2em;
+}
 .pets:hover {
-  box-shadow: 6px 3px 3px black;
+  box-shadow: 6px 3px 3px #ba2f28;
 }
 
 
@@ -352,14 +368,13 @@ h1 {
 
 .footer {
   background: #FCF5ED;
-  border: 1px solid black;
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 130px;
   width: 100%;
   padding: 0px;
-  color: rgba(0,0,0,0.3);
+  color: #161A30;
 }
 .mail {
   text-decoration: none;
@@ -376,7 +391,7 @@ h1 {
   align-items: center;
 }
 .footer-links a {
-  color: black;
+  color: #161A30 ;
   opacity: 0.5;
   text-decoration: none;
   font-size: 28px;
@@ -397,5 +412,27 @@ h1 {
   width: 56px;
   height: 56px;
   border-radius: 50%;
-
 }
+/* 
+@media screen and (max-width: 600px) {
+
+  .me {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: auto;
+  }
+
+  .project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .project-container {
+    display:flex;
+  }
+  .arrow {
+    display: none;
+  }
+
+} */

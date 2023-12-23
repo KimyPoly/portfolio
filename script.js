@@ -58,3 +58,36 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+//Surbrillance des liens de la navbar
+document.addEventListener('DOMContentLoaded', () => {
+  const sections = document.querySelectorAll('.section');
+  const navLinks = document.querySelectorAll('.nav-link');
+
+  const changeNavColor = () => {
+    let currentSection = null;
+
+    sections.forEach((section) => {
+      const rect = section.getBoundingClientRect();
+
+      if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+        currentSection = section;
+      }
+    });
+
+    navLinks.forEach((link) => {
+      link.classList.remove('active');
+    });
+
+    if (currentSection) {
+      const correspondingNavLink = document.querySelector(
+        `.nav-link[href="#${currentSection.id}"]`
+      );
+      correspondingNavLink.classList.add('active');
+    }
+  };
+
+  window.addEventListener('scroll', changeNavColor);
+
+
+  changeNavColor();
+});

@@ -380,8 +380,8 @@ h1 {
   color: #161A30;
 }
 .mail {
-  text-decoration: none;
-  color: black;
+  text-decoration: underline;
+  color: #161A30;
   font-size: 30px;
   transition: font-size 0.3s;
 }
@@ -426,16 +426,17 @@ h1 {
     width: 100%;
     margin-top: 0;
     padding-top: 0;
-    height: 24em;
+    height: 100%;
   }
   .banner h1 {
     writing-mode: vertical-rl;
     text-orientation: mixed;
     white-space: nowrap;
-    font-size: 3em;
+    font-size: 4em;
   }
   .banner h3 {
     width: 100%;
+    margin-top: 2em;
     margin: 0;
     font-size: 1.2em;
     text-align: left;
@@ -446,7 +447,6 @@ h1 {
   }
 
   .me, .project {
-
     display: block;
     height: auto;
   }
@@ -457,18 +457,24 @@ h1 {
   .me-infos {
     width: 100%;
     margin: 0;
+    margin-top: 1em;
   }
 
   .code {
-    height: 38em;
+    height: 36em;
     width: 100%;
     margin: 0;
   }
   .hobies {
-    height: 30em;
+    height: 23em;
     width: 100%;
-    margin: 2em;
-    margin-left: 3em;
+    margin: 0 0 3em 0;
+    border-top: 3px solid;
+    padding-top: 1em;
+  }
+  .hobies-list {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 3em;
   }
   #me-section {
     font-size: 3em;
@@ -480,8 +486,6 @@ h1 {
     text-align: left;
   }
   .pets {
-    /* width: 100%;
-    margin: 0; */
     display: none;
   }
   .carousel-container-bis {
@@ -494,7 +498,7 @@ h1 {
     width: 100%;
     margin: 0;
     display: block;
-    height: 70em;
+    height: 74em;
   }
   .daily-text {
     width: 100%;
@@ -507,12 +511,10 @@ h1 {
     width: 100%;
     height: 42em;
   }
-
   .project-container {
     display: flex;
     flex-direction: column;
   }
-
   .arrow {
     display: none;
   }
@@ -520,6 +522,6 @@ h1 {
     display: none;
   }
   a.mail {
-    font-size: 20px;
+    font-size: 40px;
   }
 }

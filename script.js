@@ -33,7 +33,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const prevButtonBis = document.querySelector(".carousel-control-bis.prev");
   const nextButtonBis = document.querySelector(".carousel-control-bis.next");
 
-
   let currentIndexBis = 0;
 
   const showSlideBis = index => {
@@ -87,7 +86,6 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   window.addEventListener('scroll', changeNavColor);
-
 
   changeNavColor();
 });

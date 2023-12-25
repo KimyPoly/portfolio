@@ -10,7 +10,6 @@ body {
   display: flex;
 }
 
-
 h2 {
   font-size: 5em;
 }
@@ -62,7 +61,6 @@ a.nav-link:hover {
 
 
 .banner {
-  /* max-height: 22em ; */
   height: 22em;
   background-size: cover;
   background-position: center;
@@ -165,7 +163,7 @@ h1 {
 }
 .hobies {
   margin: 3em;
-
+  color:#161A30;
   height: 45em;
   width: 13em;
 }
@@ -380,7 +378,6 @@ h1 {
   color: #161A30;
 }
 .mail {
-  text-decoration: underline;
   color: #161A30;
   font-size: 30px;
   transition: font-size 0.3s;
@@ -436,6 +433,7 @@ h1 {
   }
   .banner h3 {
     width: 100%;
+    text-align: left;
     margin-top: 2em !important;
     margin: 0;
     font-size: 1.2em;
@@ -444,7 +442,6 @@ h1 {
     text-align: left;
     font-size: 3em;
   }
-
   .me, .project {
     display: block;
     height: auto;
@@ -461,7 +458,6 @@ h1 {
   .me-infos h2 {
     text-align: center;
   }
-
   .code {
     height: 36em;
     width: 100%;
@@ -471,10 +467,9 @@ h1 {
     height: 23em;
     width: 100%;
     margin: 0 0 3em 0;
-    border-top: 3px solid;
+    border-top: 3px solid #161A30;
     padding-top: 1em;
   }
-
   .hobies-list {
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 3em;
@@ -524,12 +519,12 @@ h1 {
   }
   .footer {
     height: 5em;
-
   }
   .footer-copyright p {
     display: none;
   }
   a.mail {
     font-size: 35px;
+    text-decoration: underline;
   }
 }

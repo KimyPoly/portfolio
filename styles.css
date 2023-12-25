@@ -416,7 +416,7 @@ h1 {
   html, body {
     height: 100%;
     width: 100%;
-    margin: 0;
+    margin: 0 ;
     overflow-x: hidden;
   }
   .navbar-nav {
@@ -439,7 +439,6 @@ h1 {
     margin-top: 2em !important;
     margin: 0;
     font-size: 1.2em;
-    text-align: left;
   }
   h2 {
     text-align: left;
@@ -459,6 +458,9 @@ h1 {
     margin: 0;
     margin-top: 1em;
   }
+  .me-infos h2 {
+    text-align: center;
+  }
 
   .code {
     height: 36em;
@@ -472,6 +474,7 @@ h1 {
     border-top: 3px solid;
     padding-top: 1em;
   }
+
   .hobies-list {
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 3em;
@@ -479,11 +482,12 @@ h1 {
   #me-section {
     font-size: 3em;
     margin: 0;
-    text-align: left;
+    text-align: center;
   }
   #project-section {
     font-size: 3em;
-    text-align: left;
+    text-align: center;
+    margin: 0 0 1em 0;
   }
   .pets {
     display: none;
@@ -518,10 +522,14 @@ h1 {
   .arrow {
     display: none;
   }
+  .footer {
+    height: 5em;
+
+  }
   .footer-copyright p {
     display: none;
   }
   a.mail {
-    font-size: 40px;
+    font-size: 35px;
   }
 }

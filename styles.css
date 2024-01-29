@@ -278,18 +278,6 @@ h1 {
   margin-left: 2em;
 }
 
-.more {
-  border: 2px solid #FCF5ED;
-  height: 32em;
-  margin: 2em;
-}
-.more i {
-  color: #FCF5ED;
-  opacity: 1;
-  font-size: 10em;
-  margin: 1em 1.5em;
-}
-
 .carousel {
   display: flex;
   transition: transform 0.5s ease-in-out;
